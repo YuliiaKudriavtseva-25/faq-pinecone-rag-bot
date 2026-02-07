@@ -17,8 +17,10 @@ Pipeline: question → embedding → Pinecone search → context → LLM respons
 pip install -r requirements.txt
 ```
 2) Create .env using .env.example and set:
+```bash
 OPENAI_API_KEY
 PINECONE_API_KEY
+```
 Ensure your Pinecone index exists (default: faq-index)
 
 Run
