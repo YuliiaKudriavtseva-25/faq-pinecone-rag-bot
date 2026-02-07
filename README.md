@@ -15,4 +15,13 @@ Pipeline: question → embedding → Pinecone search → context → LLM respons
 1) Install dependencies:
 ```bash
 pip install -r requirements.txt
+2) Create .env using .env.example and set:
+OPENAI_API_KEY
+PINECONE_API_KEY
+Ensure your Pinecone index exists (default: faq-index)
 
+Run
+python main.py
+
+Dataset
+faq.csv contains question–answer pairs used as the knowledge base.
